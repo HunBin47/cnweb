@@ -1,0 +1,65 @@
+:root{
+    --white-color : #fff;
+    --black-color : #000;
+    --text-color : #333;
+    --topbar-color : rgb(53, 10, 78);
+    --navbar-color : rgb(53, 10, 78, 0.3);
+    --theme-color : linear-gradient(to right, #fa9e1b, #8d4fff);
+    --theme-text-color: #fa9e1b;
+    --header-height : 190px;
+    --topbar-height: 36px;
+    --navbar-height : 154px;
+    --container-search-height:192px;
+}
+*{
+    box-sizing: inherit;
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+.html {
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+.white-text{
+    color: var(--white-color);
+}
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes Growth {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes searchSideIn {
+    from {
+        top: 36px;
+        opacity: 0;
+    }
+
+    to {
+        top: 4px;
+        opacity: 1;
+    }
+}
