@@ -11,6 +11,9 @@
 
 .row {
     display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    flex-wrap: wrap;
     flex-wrap: wrap;
     margin-left: -4px;
     margin-right: -4px;
@@ -24,6 +27,13 @@
 .col {
     padding-left: 4px;
     padding-right: 4px;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+    box-sizing:content-box;
 }
 
 .row.no-gutters .col {
@@ -51,8 +61,8 @@
 }
 
 .c-4 {
-    flex: 0 0 33.33333%;
-    max-width: 33.33333%;
+    flex: 0 0 32%;
+    max-width: 32%;
 }
 
 .c-5 {
@@ -338,8 +348,8 @@
     }
 
     .l-4 {
-        flex: 0 0 33.33333%;
-        max-width: 33.33333%;
+        flex: 0 0 32%;
+        max-width: 32%;
     }
 
     .l-5 {
