@@ -9,7 +9,7 @@
     --header-height : 190px;
     --topbar-height: 36px;
     --navbar-height : 154px;
-    --container-search-height:192px;
+    --wrapper-search-height:192px;
 }
 *{
     box-sizing: inherit;
