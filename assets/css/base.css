@@ -10,6 +10,7 @@
     --topbar-height: 36px;
     --navbar-height : 154px;
     --wrapper-search-height:192px;
+    --price-color: #eda84a;
 }
 *{
     box-sizing: inherit;
