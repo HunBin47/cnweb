@@ -17,9 +17,9 @@
     box-sizing: inherit;
     margin-block-end: 0;
     margin-block-start: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .html {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
     box-sizing: border-box;
 }
 body{
