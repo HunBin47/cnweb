@@ -11,6 +11,7 @@
     --navbar-height : 154px;
     --wrapper-search-height:192px;
     --price-color: #eda84a;
+    --instructor-color: rgba(53, 10, 78, 0.5);
 }
 *{
     box-sizing: inherit;
@@ -18,7 +19,7 @@
     margin-block-start: 0;
 }
 .html {
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
     box-sizing: border-box;
 }
 body{

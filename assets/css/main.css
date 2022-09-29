@@ -595,17 +595,30 @@
 }
 /* Wrapper instructor */
 .wrapper__instructor--list{
-
+    margin-top: 90px;
 }
 .wrapper__instructor--item{
+    position: relative;
     width: 100%;
 }
 .wrapper__instructor--icon{
-    width: 10%;
+    position: absolute;
+    top: -16px; left: 10%;
+    width: 35px;
+    height: 35px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .wrapper__instructor--img{
+    width: 100%;
+    height: 484px;
+    background-size: cover;
 
 }
 .wrapper__instructor--content{
-
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 45%;
+    background-color: var(--instructor-color);
 }
