@@ -16,7 +16,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
-    <title>Travelix_Clone</title>
+    <style>
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+    </style>
+    <title>Bookang</title>
 </head>
 
 <body>
@@ -25,18 +32,21 @@
         <div>
             <!-- Header Topbar -->
             <div class="header__topbar hide-on-mobile-tablet">
+
                 <div class="header__infomation">
                     <p class="header__info-phone">
                         +84776974310
                     </p>
                     <ul class="header__info-list">
                         <li class="header__info-item">
-                            <a href="#!" class="header__info-link white-text">
+                            <a href="https://www.facebook.com/nhathvng/" target="_blank"
+                                class="header__info-link white-text">
                                 <i class="fa-brands fa-facebook"></i>
                             </a>
                         </li>
                         <li class="header__info-item">
-                            <a href="#!" class="header__info-link white-text">
+                            <a href="https://www.instagram.com/nhathvng/" target="_blank"
+                                class="header__info-link white-text">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
                         </li>
@@ -55,10 +65,10 @@
 
                 <div class="header__action">
                     <div class="header__action-item header__action-item-first">
-                        <a href="#!" class="header__action-link">LOGIN </a>
+                        <a href="/login.html" class="header__action-link">LOGIN </a>
                     </div>
                     <div class="header__action-item">
-                        <a href="#!" class="header__action-link">REGISTER</a>
+                        <a href="/register.html" class="header__action-link">REGISTER</a>
                     </div>
                 </div>
             </div>
@@ -68,7 +78,7 @@
                 <div class="header__logo">
                     <a href="#!" class="header__logo-link">
                         <img src="./assets/img/logo.png" alt="logo_travelix" class="header__logo-img">
-                        <p class="header__logo-lable">TRAVELIX</p>
+                        <p class="header__logo-lable">Bookang</p>
                     </a>
                 </div>
 
@@ -616,7 +626,8 @@
                                                         <i class="intro_item-content--icon fa-solid fa-star"></i>
                                                     </div>
                                                     <p class="wrapper__offer-content--text">
-                                                        Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet,
+                                                        Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit
+                                                        amet,
                                                         consectetur adipiscing elit. Nullam eu convallis tortor.
                                                     </p>
                                                     <div class="wrapper__offer-content--icon">
@@ -626,7 +637,7 @@
                                                         <i class="fa-solid fa-sailboat"></i>
                                                     </div>
                                                     <a href="#!" class="wrapper__offer-content--more">READ MORE</a>
-                                                </div>                                              
+                                                </div>
                                             </div>
                                         </div>
 
@@ -860,7 +871,7 @@
                                         </form>
 
                                         <div class="wrapper__contact--form-button">
-                                            <a href="#!" class="wrapper__input-search">SEND MASSAGE</a>
+                                            <a href="#!" class="wrapper__input-send">SEND MASSAGE</a>
                                         </div>
                                     </div>
                                 </div>
@@ -878,7 +889,7 @@
                         <div class="footer__about">
                             <div class="footer__about--logo">
                                 <img src="./assets/img/logo.png" alt="" class="footer__about--logo-img">
-                                <p class="footer__about--logo-lable">TRAVELIX</p>
+                                <p class="footer__about--logo-lable">Bookang</p>
                             </div>
                             <p class="footer__about--content">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vu lputate eros,
@@ -998,13 +1009,13 @@
                                 </div>
                                 <div class="footer__contact--item">
                                     <i class="footer__contact--item-icon fa-solid fa-envelope-open-text"></i>
-                                    <a href="mailto:tannang09032002@gmail.com"
-                                        class="footer__contact--item-text">tannang09032002@gmail.com</a>
+                                    <a href="mailto:nhathung12042002@gmail.com"
+                                        class="footer__contact--item-text">nhathung12042002@gmail.com</a>
                                 </div>
                                 <div class="footer__contact--item">
                                     <i class="footer__contact--item-icon fa-solid fa-earth-americas"></i>
-                                    <a href="https://www.facebook.com/tn.9.3.02/" target="_blank"
-                                        class="footer__contact--item-text">facebook.com/tn.9.3.02/</a>
+                                    <a href="https://www.facebook.com/nhathvng" target="_blank"
+                                        class="footer__contact--item-text">facebook.com/nhathvng</a>
                                 </div>
                             </div>
                         </div>
@@ -1020,6 +1031,18 @@
                 </div>
             </div>
         </footer>
+        <script>
+            const navbar = document.getElementsByClassName('header__navigation');
+            let top = navbar.offsetTop;
+            function stickynavbar() {
+                if (window.scrollY >= top) {
+                    navbar.classList.add('sticky');
+                } else {
+                    navbar.classList.remove('sticky');
+                }
+            }
+            window.addEventListener('scroll', stickynavbar);
+        </script>
 </body>
 
 </html>

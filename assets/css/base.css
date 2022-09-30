@@ -3,7 +3,7 @@
     --black-color : #000;
     --text-color : #333;
     --topbar-color : rgb(53, 10, 78);
-    --navbar-color : rgb(53, 10, 78, 0.3);
+    --navbar-color : rgb(53, 10, 78, 0.5);
     --theme-color : linear-gradient(to right, #fa9e1b, #8d4fff);
     --theme-text-color: #fa9e1b;
     --header-height : 190px;
@@ -32,6 +32,11 @@ a{
 .white-text{
     color: var(--white-color);
 }
+/* .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+} */
 /* Animation */
 @keyframes fadeIn {
     from {
