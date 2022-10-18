@@ -1,29 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<style>
-div.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0px;
-  padding: 5px;
-  background-color: #cae8ca;
-  border: 2px solid #4CAF50;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="./assets/css/main.css"> -->
+  <link rel="stylesheet" href="./assets/css/base.css">
+  <link rel="stylesheet" href="./assets/css/login.css">
+  <!-- <link rel="stylesheet" href="./assets/css/grid.css"> -->
+  <link rel="stylesheet" href="./assets/css/bootstrap-grid.css">
+  <!-- <link rel="stylesheet" href="./assets/css/responsive.css"> -->
+  <link rel="stylesheet" href="./assets/font/fontawesome-free-6.2.0-web/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Qwigley&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <title>Login</title>
 </head>
+
 <body>
+  <div class="login__wrapper">
+    <div class="login__header">
+      <div class="login__wrapper-header-logo">
+        <a href="#!" class="login__wrapper-header-logo-link">
+          <img src="./assets/img/logo.png" alt="logo_travelix" class="login__wrapper-header-logo-img">
+          <p class="login__wrapper-header-logo-label">Bookang</p>
+        </a>
+      </div>
+    </div>
+    <div class="grid wide">
+      <div class="row">
+        <div class="col col-lg-12">
+          <div class="login__wrapper-form">
+            <p class="login__label">register</p>
+            <form action="" class="login__form">
+              <input type="text" class="login__form-name" placeholder="Fullname" required="required"
+                data-error="Name is required">
+              <input type="text" class="login__form-username" placeholder="Username" required="required"
+                data-error="Username is required">
+              <input type="password" class="login__form-password" placeholder="Password" required="required"
+                data-error="Password is required">
+              <input type="submit" class="login__form-submit" value="register">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<p>Try to <b>scroll</b> inside this frame to understand how sticky positioning works.</p>
-<p>Note: IE/Edge 15 and earlier versions do not support sticky position.</p>
-
-<div class="sticky">I am sticky!</div>
-
-<div style="padding-bottom:2000px">
-  <p>In this example, the sticky element sticks to the top of the page (top: 0), when you reach its scroll position.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-</div>
-
+  </div>
 </body>
-</html>
