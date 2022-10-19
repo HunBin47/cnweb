@@ -9,8 +9,11 @@
 
 .header {
     width: 100%;
-    height: 178px;
+    height: 160px;
     z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .header__topbar {
@@ -101,7 +104,7 @@
 }
 .footer__about--logo,
 .header__logo-link {
-    padding: 40px 20px;
+    padding: 32px 20px;
     display: flex;
     align-items: flex-end;
 }
@@ -176,7 +179,7 @@
 /* Container */
 /* Container home */
 .wrapper {
-    margin-top: -175px;
+    /* margin-top: -178px; */
 }
 
 .wrapper__home {}
