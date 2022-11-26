@@ -1,0 +1,103 @@
+label{
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--white-color);
+}
+i{
+    padding: 0 10px;
+}
+img {
+    border-radius: 15%;
+  }
+.wp_search__info{
+    width: 90%;
+    margin: 10px 0;
+    padding: 10px;
+    border: solid 2px var(--topbar-color);
+}
+.wp_search__button{
+    margin-top: 10px;
+    padding: 10px 45px;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 700;
+    border: solid 3px var(--topbar-color);
+    background-color: var(--white-color);
+    color: var(--topbar-color);
+    border-radius: 20px;
+    transition: all 200ms ease;
+}
+.wp_search__button:hover{
+    background-color: var(--topbar-color);
+    color: var(--white-color);
+}
+.wp_search__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper__article{
+    height: auto;
+}
+.wp_result__item{
+    margin: 20px 0;
+    min-height: 150px;
+}
+.wp_result__img{
+    background-size: cover;
+}
+.wp_result__info{
+    display: flex;
+    flex-direction: column;
+}
+.wp_result__name{
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+    padding: 8px 0 ;
+}
+.wp_result__address{
+    font-size: 14px;
+    font-weight: 600;
+}
+.wp_result__convenient{
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+}
+.wp_result_description{
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 400;
+    color: black;
+}
+.wp_result__review_price{
+    
+}
+.wp_result__review{
+    display: flex;
+}
+.wp_result__mark{
+    padding-right: 6px;
+}
+.wp_result__rating{
+    font-size: 12px;
+    font-weight: 600;
+    padding: 6px;
+    background-color: #06153b;
+    color: aliceblue;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.wp_result__price{
+    padding: 10px;
+    background-color: #75a4e1;
+    color:black;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    width: 100%;
+}

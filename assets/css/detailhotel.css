@@ -1,0 +1,177 @@
+i {
+    padding: 0 6px;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+p {
+    /* padding: 16px 0; */
+    margin-bottom: 0 !important;
+}
+
+figure {
+    margin: 0;
+    margin-bottom: 0 !important;
+}
+ul{
+    list-style: none;
+}
+div#wp_dh__description>ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+div#wp_dh__description>ul>li {
+    font-size: 15px;
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+div#wp_dh__description>ul>li:before {
+    content: "-" !important;
+    padding-right: 5px;
+}
+
+.photogrid {
+    display: grid;
+    grid-template-columns: repeat(8, 1.5fr);
+    grid-template-rows: repeat(8, 4vw);
+    grid-gap: 5px;
+
+}
+
+
+.wp_dh__navigation_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    padding: 6px 0;
+    border-radius: 10px;
+    transition: all 200ms ease-in-out;
+}
+
+.wp_dh__navigation_item:hover {
+    background-color: var(--topbar-color);
+    color: aliceblue;
+}
+
+.wp_dh__namehotel {
+    padding: 14px 0;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.wp_dh__title {
+    padding: 12px 0;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.wp_dh__address {
+    padding: 6px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.wp_dh__convenient {
+    padding-bottom: 20px;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+}
+.wp_dh_des_content{
+    font-size: 16px;
+    font-weight: 700;
+    font-style: italic;
+}
+.wp_dh__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wp_dh_gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.wp_dh_gallery__item--2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.wp_dh_gallery__item--3 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+
+.wp_dh_gallery__item--4 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
+
+.wp_dh_gallery__item--5 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
+
+.wp_dh_gallery__item--6 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
+
+.buying_box {
+    max-height: 300px;
+    padding: 18px;
+    width: 100%;
+    background-color: var(--navbar-color);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bb_attraction{
+    color: var(--white-color);
+    font-size: 14px;
+    line-height: 1.6;
+}
+.bb_attraction_title{
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 12px;
+}
+.bb_buynow{
+    margin-top: 10px;
+    padding: 10px 45px;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 700;
+    border: solid 3px var(--topbar-color);
+    background-color: var(--white-color);
+    color: var(--topbar-color);
+    border-radius: 20px;
+    transition: all 200ms ease;
+}
+.bb_buynow:hover{
+    background-color: var(--topbar-color);
+    color: var(--white-color);
+}

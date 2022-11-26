@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/orderpage.css">
+    <!-- <link rel="stylesheet" href="./assets/css/grid.css"> -->
+    <link rel="stylesheet" href="../assets/css/bootstrap-grid.css">
+    <!-- <link rel="stylesheet" href="./assets/css/responsive.css"> -->
+    <link rel="stylesheet" href="../assets/font/fontawesome-free-6.2.0-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Qwigley&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <title>Order</title>
+</head>
+<body>
+    <header class="header padding-on-mobile">
+        <div>
+            <!-- Header Topbar -->
+            <div class="header__topbar hide-on-mobile-tablet">
+
+                <div class="header__infomation">
+                    <p class="header__info-phone">
+                        +84776974310
+                    </p>
+                    <ul class="header__info-list">
+                        <li class="header__info-item">
+                            <a href="https://www.facebook.com/nhathvng/" target="_blank"
+                                class="header__info-link white-text">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="header__info-item">
+                            <a href="https://www.instagram.com/nhathvng/" target="_blank"
+                                class="header__info-link white-text">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="header__info-item">
+                            <a href="#!" class="header__info-link white-text">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="header__info-item">
+                            <a href="#!" class="header__info-link white-text">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="header__action">
+                    <div class="header__action-item header__action-item-first">
+                        <a href="/login.html" class="header__action-link">LOGIN </a>
+                    </div>
+                    <div class="header__action-item">
+                        <a href="/register.html" class="header__action-link">REGISTER</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Header Navigation -->
+            <div class="header__navigation">
+                <div class="header__logo">
+                    <a href="#!" class="header__logo-link">
+                        <img src="../assets/img/logo.png" alt="logo_travelix" class="header__logo-img">
+                        <p class="header__logo-lable">Bookang</p>
+                    </a>
+                </div>
+
+                <div class="header__navbar hide-on-mobile-tablet">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--active">
+                            <a href="#header" class="header__navbar-link">HOME</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="#!" class="header__navbar-link">ABOUT US</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="#!" class="header__navbar-link">OFFERS</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="#!" class="header__navbar-link">NEWS</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="#!" class="header__navbar-link">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="header__search">
+                    <label for="header__search-form-check" class="header__search-lable">
+                        <i class="header__search-icon fa-solid fa-magnifying-glass"></i>
+                    </label>
+
+                    <label for="header__subNavbar-form-check" class="header__subNavbar">
+                        <i class="header__subNavbar-icon fa-solid fa-bars"></i>
+                    </label>
+
+                    <input type="checkbox" hidden class="header__search-form-checked" id="header__search-form-check">
+                    <form class="header__search-form">
+                        <input type="search" class="header__search-input" placeholder="Search...">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- SubNav -->
+        <input type="checkbox" hidden class="header__subNavbar-form-checked" id="header__subNavbar-form-check">
+        <div class="header__subNavbar--layout">
+            <div class="header__subNavbar--layout-img">
+                <img src="../assets/img/logo.png" alt="logo_travelix">
+            </div>
+            <div class="header__subNavbar--layout-content">
+                <ul class="header__subNavbar--layout-list">
+                    <li class="header__subNavbar--layout-item">home</li>
+                    <li class="header__subNavbar--layout-item">about us</li>
+                    <li class="header__subNavbar--layout-item">offers</li>
+                    <li class="header__subNavbar--layout-item">news</li>
+                    <li class="header__subNavbar--layout-item">contact</li>
+                </ul>
+            </div>
+
+            <input type="checkbox" hidden class="header__subNavbar-form-checked" id="header__subNavbar-form-check">
+            <label for="header__subNavbar-form-check" class="header__subNavbar">
+                <i class="header__subNavbar--layout-icon fa-solid fa-xmark"></i>
+            </label>
+        </div>
+    </header>
+    <!-- Wrapper -->
+    <div class="wrapper" style="margin-top: 150px;">
+        <!-- Wrapper Home -->
+        <div class="wrapper__home container">
+            <div class="row">
+                <div class="wrapper__searchbox col-lg-3 col-sm-12">
+                    <div class="wp_search__item">
+                        <label for="city">Tên thành phố</label>
+                        <input type="text" name="city" class="wp_search__info">
+                    </div>
+                    <div class="wp_search__item">
+                        <label for="hotel_select">Tên khách sạn</label>
+                        <select name="hotel_select" class="wp_search__info">
+                            <option value="Grand hotel">Grand hotel</option>
+                            <option value="Grand hotel">Grand hotel</option>
+                            <option value="Grand hotel">Grand hotel</option>
+                            <option value="Grand hotel">Grand hotel</option>
+                          </select>
+                    </div>
+                    <div class="wp_search__item">
+                        <label for="hotel_box"></label>
+                        <input type="text" name="hotel_box" class="wp_search__info">
+                    </div>
+                    <div class="wp_search__item">
+                        <input type="submit" value="Tìm" name="submit" class="wp_search__button">
+                    </div>
+                </div>
+                <div class="wrapper__article col-lg-9 col-sm-12 col-md-12">
+                    <div class="wp_result__item row">
+                        <img src="../assets/img/trending_1.jpg" alt="logo_travelix" class="wp_result__img col-sm-3">
+                        <div class="wp_result__info col-sm-7">
+                            <a href="" class="wp_result__name">GRAND HOTEL</a>
+                            <a href="" class="wp_result__address"><i class="fa-solid fa-location-pin"></i>Cẩm Thanh, Hội An</a>
+                            <p class="wp_result__convenient">Cách trung tâm thành phố 1km</p>
+                            <p class="wp_result_description">Grand hotel trang bị nhiều phòng giường đôi phục vụ gia đình</p>
+                        </div>
+                        <div class="wp_result__review_price col-sm-2">
+                            <div class="wp_result__review">
+                                <p class="wp_result__mark">Xuat sac</p>
+                                <p class="wp_result__rating">9.5</p>
+                            </div>
+                            <a href="" class="wp_result__price">Hiển thị giá</a>
+                        </div>                
+                    </div>
+
+                    <div class="wp_result__item row">
+                        <img src="../assets/img/trending_1.jpg" alt="logo_travelix" class="wp_result__img col-sm-3">
+                        <div class="wp_result__info col-sm-7">
+                            <a href="" class="wp_result__name">GRAND HOTEL</a>
+                            <a href="" class="wp_result__address"><i class="fa-solid fa-location-pin"></i>Cẩm Thanh, Hội An</a>
+                            <p class="wp_result__convenient">Cách trung tâm thành phố 1km</p>
+                            <p class="wp_result_description">Grand hotel trang bị nhiều phòng giường đôi phục vụ gia đình</p>
+                        </div>
+                        <div class="wp_result__review_price col-sm-2">
+                            <div class="wp_result__review">
+                                <p class="wp_result__mark">Xuat sac</p>
+                                <p class="wp_result__rating">9.5</p>
+                            </div>
+                            <a href="" class="wp_result__price">Hiển thị giá</a>
+                        </div>                
+                    </div>
+
+                    <div class="wp_result__item row">
+                        <img src="../assets/img/trending_1.jpg" alt="logo_travelix" class="wp_result__img col-sm-3">
+                        <div class="wp_result__info col-sm-7">
+                            <a href="" class="wp_result__name">GRAND HOTEL</a>
+                            <a href="" class="wp_result__address"><i class="fa-solid fa-location-pin"></i>Cẩm Thanh, Hội An</a>
+                            <p class="wp_result__convenient">Cách trung tâm thành phố 1km</p>
+                            <p class="wp_result_description">Grand hotel trang bị nhiều phòng giường đôi phục vụ gia đình</p>
+                        </div>
+                        <div class="wp_result__review_price col-sm-2">
+                            <div class="wp_result__review">
+                                <p class="wp_result__mark">Xuat sac</p>
+                                <p class="wp_result__rating">9.5</p>
+                            </div>
+                            <a href="" class="wp_result__price">Hiển thị giá</a>
+                        </div>                
+                    </div>
+
+                    <div class="wp_result__item row">
+                        <img src="../assets/img/trending_1.jpg" alt="logo_travelix" class="wp_result__img col-sm-3">
+                        <div class="wp_result__info col-sm-7">
+                            <a href="" class="wp_result__name">GRAND HOTEL</a>
+                            <a href="" class="wp_result__address"><i class="fa-solid fa-location-pin"></i>Cẩm Thanh, Hội An</a>
+                            <p class="wp_result__convenient">Cách trung tâm thành phố 1km</p>
+                            <p class="wp_result_description">Grand hotel trang bị nhiều phòng giường đôi phục vụ gia đình</p>
+                        </div>
+                        <div class="wp_result__review_price col-sm-2">
+                            <div class="wp_result__review">
+                                <p class="wp_result__mark">Xuat sac</p>
+                                <p class="wp_result__rating">9.5</p>
+                            </div>
+                            <a href="" class="wp_result__price">Hiển thị giá</a>
+                        </div>                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

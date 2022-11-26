@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/detailhotel.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="./assets/css/grid.css"> -->
+    <link rel="stylesheet" href="../assets/css/bootstrap-grid.css">
+    <!-- <link rel="stylesheet" href="./assets/css/responsive.css"> -->
+    <link rel="stylesheet" href="../assets/font/fontawesome-free-6.2.0-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Qwigley&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <title>Detail</title>
+</head>
+
+<body>
+    <header class="header padding-on-mobile">
+        <div>
+            <!-- Header Topbar -->
+            <div class="header__topbar hide-on-mobile-tablet">
+
+                <div class="header__infomation">
+                    <p class="header__info-phone">
+                        +84776974310
+                    </p>
+                    <ul class="header__info-list">
+                        <li class="header__info-item">
+                            <a href="https://www.facebook.com/nhathvng/" target="_blank"
+                                class="header__info-link white-text">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="header__info-item">
+                            <a href="https://www.instagram.com/nhathvng/" target="_blank"
+                                class="header__info-link white-text">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="header__info-item">
+                            <a href="#!" class="header__info-link white-text">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="header__info-item">
+                            <a href="#!" class="header__info-link white-text">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="header__action">
+                    <div class="header__action-item header__action-item-first">
+                        <a href="/login.html" class="header__action-link">LOGIN </a>
+                    </div>
+                    <div class="header__action-item">
+                        <a href="/register.html" class="header__action-link">REGISTER</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Header Navigation -->
+            <div class="header__navigation">
+                <div class="header__logo">
+                    <a href="#!" class="header__logo-link">
+                        <img src="../assets/img/logo.png" alt="logo_travelix" class="header__logo-img">
+                        <p class="header__logo-lable">Bookang</p>
+                    </a>
+                </div>
+
+                <div class="header__navbar hide-on-mobile-tablet">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--active">
+                            <a href="#header" class="header__navbar-link">HOME</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="#!" class="header__navbar-link">ABOUT US</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="#!" class="header__navbar-link">OFFERS</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="#!" class="header__navbar-link">NEWS</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="#!" class="header__navbar-link">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="header__search">
+                    <label for="header__search-form-check" class="header__search-lable">
+                        <i class="header__search-icon fa-solid fa-magnifying-glass"></i>
+                    </label>
+
+                    <label for="header__subNavbar-form-check" class="header__subNavbar">
+                        <i class="header__subNavbar-icon fa-solid fa-bars"></i>
+                    </label>
+
+                    <input type="checkbox" hidden class="header__search-form-checked" id="header__search-form-check">
+                    <form class="header__search-form">
+                        <input type="search" class="header__search-input" placeholder="Search...">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- SubNav -->
+        <input type="checkbox" hidden class="header__subNavbar-form-checked" id="header__subNavbar-form-check">
+        <div class="header__subNavbar--layout">
+            <div class="header__subNavbar--layout-img">
+                <img src="../assets/img/logo.png" alt="logo_travelix">
+            </div>
+            <div class="header__subNavbar--layout-content">
+                <ul class="header__subNavbar--layout-list">
+                    <li class="header__subNavbar--layout-item">home</li>
+                    <li class="header__subNavbar--layout-item">about us</li>
+                    <li class="header__subNavbar--layout-item">offers</li>
+                    <li class="header__subNavbar--layout-item">news</li>
+                    <li class="header__subNavbar--layout-item">contact</li>
+                </ul>
+            </div>
+
+            <input type="checkbox" hidden class="header__subNavbar-form-checked" id="header__subNavbar-form-check">
+            <label for="header__subNavbar-form-check" class="header__subNavbar">
+                <i class="header__subNavbar--layout-icon fa-solid fa-xmark"></i>
+            </label>
+        </div>
+    </header>
+    <div class="wrapper" style="margin-top: 149px;">
+        <!-- Wrapper Home -->
+        <div class="wrapper__home container">
+            <div class="row">
+                <div class="wp_detail__hotel col-lg-9">
+                    <div class="wp_dh__navigation row">
+                        <a href="#wp_dh__general" class="wp_dh__navigation_item col-sm-3">Thông tin chung</a>
+                        <a href="#wp_dh__rooms" class="wp_dh__navigation_item col-sm-3">Bảng phòng</a>
+                        <a href="#wp_dh__description" class="wp_dh__navigation_item col-sm-3">Mô tả và tiện ích</a>
+                    </div>
+                    <div id="wp_dh__general">
+                        <div class="wp_dh__namehotel">
+                            Grand hotel
+                        </div>
+                        <div class="wp_dh__title">
+                            Thông tin chung
+                        </div>
+                        <a href="" class="wp_dh__address"><i class="fa-solid fa-location-pin"></i>Cẩm Thanh, Hội An</a>
+                        <p class="wp_dh__convenient">Cách trung tâm thành phố 1km</p>
+                        <div class="wp_dh_gallery photogrid">
+                            <figure class="wp_dh_gallery__item wp_dh_gallery__item--1">
+                                <img src="../assets/img/dalat/350907821.jpg" alt="" class="wp_dh__image">
+                            </figure>
+                            <figure class="wp_dh_gallery__item wp_dh_gallery__item--2">
+                                <img src="../assets/img/dalat/350907824.jpg" alt="" class="wp_dh__image">
+                            </figure>
+                            <figure class="wp_dh_gallery__item wp_dh_gallery__item--3">
+                                <img src="../assets/img/dalat/350907830.jpg" alt="" class="wp_dh__image">
+                            </figure>
+                            <figure class="wp_dh_gallery__item wp_dh_gallery__item--4">
+                                <img src="../assets/img/dalat/350995146.jpg" alt="" class="wp_dh__image">
+                            </figure>
+                            <figure class="wp_dh_gallery__item wp_dh_gallery__item--5">
+                                <img src="../assets/img/dalat/351236516.jpg" alt="" class="wp_dh__image">
+                            </figure>
+                            <figure class="wp_dh_gallery__item wp_dh_gallery__item--6">
+                                <img src="../assets/img/dalat/350907821.jpg" alt="" class="wp_dh__image">
+                            </figure>
+                        </div>
+                        <p>
+                            Tọa lạc tại thành phố Đà Lạt, cách Công viên Yersin 1,6 km, Bazan Hotel Dalat có chỗ nghỉ
+                            với sảnh khách chung, chỗ đỗ xe riêng miễn phí và khu vườn. Khách sạn 3 sao này cung cấp
+                            dịch vụ phòng và dịch vụ tiền sảnh. Chỗ nghỉ có lễ tân 24 giờ, dịch vụ đưa đón sân bay, bếp
+                            chung và WiFi miễn phí trong toàn bộ khuôn viên.
+                        </p>
+                    </div>
+                    <div id="wp_dh__rooms">
+                        <div class="wp_dh__title">
+                            Bảng giá phòng
+                        </div>
+                        <table class="table table-bordered">
+                            <thead class="table-light">
+                                <tr>
+                                    <th scope="col">Tên phòng</th>
+                                    <th scope="col">Phù hợp cho</th>
+                                    <th scope="col">Mô tả</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row">303</td>
+                                    <td>2 người lớn</td>
+                                    <td>Phòng có giường đôi lớn, view biển</td>
+                                    <td><a href="">Hiển thị giá</a> 
+                                </tr>
+                                <tr>
+                                    <td scope="row">304</td>
+                                    <td>2 người lớn</td>
+                                    <td>Phòng có giường đôi lớn, view biển</td>
+                                    <td><a href="">Hiển thị giá</a> 
+                                </tr>
+                                <tr>
+                                    <td scope="row">305</td>
+                                    <td>4 người lớn</td>
+                                    <td>Phòng có giường đôi lớn, view biển</td>
+                                    <td><a href="">Hiển thị giá</a> 
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="wp_dh__description">
+                        <div class="wp_dh__title">
+                            Mô tả và tiện ích
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="wp_dh_des_content">
+                                    <i class="fa-solid fa-bath"></i>
+                                    Phòng tắm    
+                                </div>   
+                                <ul>
+                                    <li>Giấy vệ sinh</li>
+                                    <li>Khăn tắm</li>
+                                    <li>Chậu rửa vệ sinh (bidet)</li>
+                                    <li>Bồn tắm hoặc Vòi sen</li>
+                                </ul>   
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="wp_dh_des_content">
+                                    <i class="fa-solid fa-bed"></i>
+                                    Phòng ngủ
+                                </div>
+                                <ul>
+                                    <li>Ra trải giường</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="wp_dh_des_content">
+                                    <i class="fa-solid fa-fire-burner"></i>
+                                    Nhà bếp
+                                </div>
+                                <ul>
+                                    <li>Bếp chung</li>
+                                    <li>Sản phẩm lau rửa</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="wp_dh_des_content">
+                                    <i class="fa-solid fa-wifi"></i>
+                                    Wifi
+                                </div>
+                                <ul>
+                                    <li>Wi-fi có ở toàn bộ khách sạn và miễn phí.</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="wp_dh_des_content">
+                                    <i class="fa-solid fa-car"></i></i>
+                                    Phương tiện đi lại
+                                </div>
+                                <ul>
+                                    <li>Vé đi phương tiện công cộng</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="wp_dh_des_content">
+                                    <i class="fa-solid fa-utensils"></i>
+                                    Đồ ăn, thức uống
+                                </div>
+                                <ul>
+                                    <li>Quầy bar (đồ ăn nhẹ)</li>
+                                </ul>
+                        
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="wp_dh_des_content">
+                                    <i class="fa-solid fa-user"></i>
+                                    Dịch vụ lễ tân
+                                </div>
+                                <ul>
+                                    <li>Nhận/trả phòng riêng</li>
+                                    <li>Dịch vụ trợ giúp đặc biệt</li>
+                                    <li>Giữ hành lí</li>
+                                    <li>Bàn bán tour</li>
+                                    <li>Nhận/trả phòng cấp tốc</li>
+                                    <li>Phụ phí</li>
+                                    <li>Lễ tân 24 giờ</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="wp_dh_des_content">
+                                    <i class="fa-solid fa-person-booth"></i></i>
+                                    Dịch vụ phòng
+                                </div>
+                                <ul>
+                                    <li>Dọn phòng hàng ngày</li>
+                                    <li>Bàn ủi li quần</li>
+                                    <li>Giặt ủi</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="wp_dh_des_content">
+                                    <i class="fa-solid fa-lock"></i>
+                                    An ninh
+                                </div>
+                                <ul>
+                                    <li>Bình chữa cháy</li>
+                                    <li>Thiết bị báo cháy</li>
+                                    <li>Ổ khóa mở bằng thẻ</li>
+                                    <li>Két an toàn</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="buying_box col-lg-3">
+                    <div class="bb_attraction">
+                        <div class="bb_attraction_title">
+                            <i class="fa-solid fa-check"></i>
+                            Điểm nổi bật của khách sạn
+                        </div>
+                        <ul>
+                            <li>Địa điểm hàng đầu: Được khách gần đây đánh giá cao</li>
+                            <li>Có bãi đậu xe riêng miễn phí ở khách sạn này</li>
+                        </ul>
+                    </div>
+                    <a href="" class="bb_buynow">Đặt ngay</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
